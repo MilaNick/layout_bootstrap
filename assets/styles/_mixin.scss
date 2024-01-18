@@ -1,0 +1,15 @@
+@mixin text($font-family: Chilanka,
+            $font-size: 26px,
+            $font-style: normal,
+            $font-weight: 400,
+            $letter-spacing: 0.26px,
+            $text-transform: capitalize
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  text-transform: $text-transform;
+}
+

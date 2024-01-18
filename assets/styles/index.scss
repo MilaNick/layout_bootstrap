@@ -1,0 +1,9 @@
+@import "normalize";
+@import "variable";
+@import "mixin";
+
+body{
+  background: #eee;
+  color: #41403E;
+  @include text();
+}
