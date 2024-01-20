@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+
+  &_icon {
+    width: 57px;
+    height: 57px;
+    fill: $color-svg-main;
+  }
+
+  &_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_title {
+    color: $color-main;
+    @include text(35px, 1.05px, uppercase);
+  }
+
+  &_text {
+    color: $color-desc;
+    @include text(15px, 0.9px, capitalize, $font-family-optional);
+  }
+}

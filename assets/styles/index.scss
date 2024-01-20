@@ -1,9 +1,6 @@
-@import "normalize";
 @import "variable";
 @import "mixin";
+@import "common";
+@import "logo";
 
-body{
-  background: #eee;
-  color: #41403E;
-  @include text();
-}
+

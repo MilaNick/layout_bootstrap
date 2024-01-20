@@ -1,0 +1,13 @@
+html {
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $bg-base;
+  color: $color-main;
+  @include text();
+}
