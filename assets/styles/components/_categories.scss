@@ -1,0 +1,16 @@
+.categories {
+  @include mt();
+  color: $color-main;
+  @include text();
+  &_item {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_img {
+    width: 100px;
+  }
+  &_title {
+    @include mt(16px);
+  }
+}

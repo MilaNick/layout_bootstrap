@@ -11,3 +11,29 @@ body {
   color: $color-main;
   @include text();
 }
+
+.container-fluid {
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  @include text(88px,2.64px);
+}
+
+h2 {
+  @include text(75px,1.5px, uppercase);
+}
+
+h3 {
+  @include text(55px,0.55px);
+}
+
+h4 {
+  @include text(26px,0.26px);
+}

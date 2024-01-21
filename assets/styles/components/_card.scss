@@ -1,0 +1,84 @@
+.btn-outline-secondary {
+  --bs-btn-border-color: rgba(65, 64, 62, 0.20);
+  padding: 0;
+}
+
+.my-card {
+  width: calc(100% - 1px);
+
+  &_thumb {
+    position: relative;
+    width: 100%;
+    height: 283px;
+    padding: 14px 0;
+    background: $bg_thumb;
+    overflow: hidden;
+    border-radius: 10px;
+    &-btn {
+      position: absolute;
+      left: 14px;
+      padding: 4px 8px 0 8px;
+      @include text(18px,0.18px);
+    }
+  }
+
+  &_img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &_title {
+    @include mt(20px);
+  }
+
+  &_rating {
+    @include mt(7.5px);
+
+    &-star {
+      fill: $color-svg-main;
+    }
+
+    &-count {
+      color: $color-desc-optional;
+      @include text(15px, 0, capitalize, $font-family-additional);
+      margin-left: 4px;
+    }
+  }
+
+  &_price {
+    color: $color-svg-main;
+    @include text(26px, 0.26px, capitalize, $font-family-additional, normal, 300);
+ }
+
+  &_price small {
+    margin-right: 7px;
+    color: $color-desc-optional;
+    text-decoration: line-through;
+    @include text(18px, 0.26px, capitalize, $font-family-additional, normal, 300)
+  }
+
+  &_links {
+    @include mt(18px);
+
+  }
+
+  &_btn {
+    padding: 10px 12px 4px;
+    color: $color-main;
+    @include text(17px, 0.34px, uppercase);
+    border-radius: 4px;
+  }
+
+  &_favorite {
+    margin-left: 5px;
+    padding: 8px 12px;
+    & svg {
+      width: 16px;
+      height: 13px;
+      fill: $color-main;
+    }
+  }
+
+}
+//my-card_btn my-card_thumb-btn
+
