@@ -162,6 +162,8 @@ h4 {
 }
 .my-card_title {
   margin-top: 20px;
+  height: 28px;
+  overflow: hidden;
 }
 .my-card_rating {
   margin-top: 7.5px;

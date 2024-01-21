@@ -29,6 +29,8 @@
 
   &_title {
     @include mt(20px);
+    height: 28px;
+    overflow: hidden;
   }
 
   &_rating {
