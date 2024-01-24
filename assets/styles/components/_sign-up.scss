@@ -1,5 +1,15 @@
 .sign-up {
   @include mt();
   background: $bg_secondary;
-  height: 200px;
+
+  &_title {
+    @include mt();
+    text-align: center;
+
+    & span {
+      color: $color-svg-main;
+
+    }
+  }
+
 }

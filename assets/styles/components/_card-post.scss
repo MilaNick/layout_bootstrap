@@ -1,0 +1,42 @@
+.card-post {
+  @include mt(30px);
+
+  &_thumb {
+    position: relative;
+
+    &-date {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    &-day {
+      color: $color-svg-main;
+      @include text(26px,0.26px, capitalize, $font-family-additional, normal, 300);
+    }
+    &-month {
+      @include text(15px,0.26px, capitalize, $font-family-additional);
+      @include mt(-10px);
+    }
+  }
+
+  &_title {
+    @include mt(20px);
+    @include text();
+  }
+
+  &_desc {
+    color: $color-desc-optional;
+    @include text(16px, 1, capitaalize, $font-family-additional);
+  }
+
+  &_link{
+    color: $color-desc-optional;
+    @include mt(20px);
+    @include text(16px, 0.32px, uppercase);
+    text-underline-offset: 10px;
+  }
+}

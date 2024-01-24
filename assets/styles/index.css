@@ -344,10 +344,79 @@ h4 {
     margin-top: 120px;
   }
 }
+.card-post {
+  margin-top: 30px;
+}
+.card-post_thumb {
+  position: relative;
+}
+.card-post_thumb-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: #fff;
+}
+.card-post_thumb-day {
+  color: #dead6f;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.26px;
+  text-transform: capitalize;
+}
+.card-post_thumb-month {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.26px;
+  text-transform: capitalize;
+  margin-top: -10px;
+}
+.card-post_title {
+  margin-top: 20px;
+  font-family: Chilanka;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.26px;
+  text-transform: capitalize;
+}
+.card-post_desc {
+  color: #908f8d;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1;
+  text-transform: capitaalize;
+}
+.card-post_link {
+  color: #908f8d;
+  margin-top: 20px;
+  font-family: Chilanka;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  text-underline-offset: 10px;
+}
+
 .sign-up {
   margin-top: 150px;
   background: #f9f3ec;
-  height: 200px;
+}
+.sign-up_title {
+  margin-top: 150px;
+  text-align: center;
+}
+.sign-up_title span {
+  color: #dead6f;
 }
 
 /*# sourceMappingURL=index.css.map */
