@@ -1,5 +1,45 @@
-.slider {
-  background: $bg_secondary;
+.quotes {
+  @include mt();
+
+  &_slider {
+    padding: 61px 0 0;
+  }
+
+  &_marks {
+    color: $color-quotes;
+    @include text(600px,0,uppercase, Syne);
+    line-height: 80%;
+  }
+
+  &_text {
+    @include text(36px, 1, none);
+    line-height: 150%;
+  }
+
+  &_desc {
+    @include mt(20px);
+    @include text(15px, 1, capitalize, $font-family-additional, normal, 500);
+  }
+
+  & .carousel-indicators {
+    position: static;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    @include mt(50px);
+    margin-left: 0;
+
+    @include mt(50px);
+    & [data-bs-target] {
+      width: 15px;
+      height: 15px;
+      border: 1px solid $color-main;
+      border-radius: 50%;
+    }
+    & .active {
+      background: $color-main;
+    }
+  }
 }
 
 .slider-best {

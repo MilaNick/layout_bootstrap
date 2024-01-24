@@ -1,11 +1,11 @@
 .btn-outline-secondary {
-  --bs-btn-border-color: rgba(65, 64, 62, 0.20);
+  --bs-btn-border-color: #{$color-border};
   padding: 0;
 }
 
 .my-card {
   width: calc(100% - 1px);
-
+  @include mt(30px);
   &_thumb {
     position: relative;
     width: 100%;
@@ -16,21 +16,18 @@
     border-radius: 10px;
     &-btn {
       position: absolute;
+      top: 14px;
       left: 14px;
       padding: 4px 8px 0 8px;
       @include text(18px,0.18px);
     }
-  }
-
-  &_img {
-    width: 100%;
-    object-fit: cover;
-  }
+}
 
   &_title {
     @include mt(20px);
-    height: 28px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &_rating {

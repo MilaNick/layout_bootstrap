@@ -21,11 +21,6 @@ body {
   padding: 0;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
-}
-
 h1 {
   font-family: Chilanka;
   font-size: 88px;
@@ -98,8 +93,57 @@ h4 {
   border: 1px solid red;
 }
 
-.slider {
-  background: #f9f3ec;
+.quotes {
+  margin-top: 150px;
+}
+.quotes_slider {
+  padding: 61px 0 0;
+}
+.quotes_marks {
+  color: #f7eee4;
+  font-family: Syne;
+  font-size: 600px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  line-height: 80%;
+}
+.quotes_text {
+  font-family: Chilanka;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1;
+  text-transform: none;
+  line-height: 150%;
+}
+.quotes_desc {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1;
+  text-transform: capitalize;
+}
+.quotes .carousel-indicators {
+  position: static;
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-top: 50px;
+}
+.quotes .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #41403e;
+  border-radius: 50%;
+}
+.quotes .carousel-indicators .active {
+  background: #41403e;
 }
 
 .slider-best {
@@ -129,12 +173,13 @@ h4 {
 }
 
 .btn-outline-secondary {
-  --bs-btn-border-color: rgba(65, 64, 62, 0.20);
+  --bs-btn-border-color: rgba(65, 64, 62, 0.2);
   padding: 0;
 }
 
 .my-card {
   width: calc(100% - 1px);
+  margin-top: 30px;
 }
 .my-card_thumb {
   position: relative;
@@ -147,6 +192,7 @@ h4 {
 }
 .my-card_thumb-btn {
   position: absolute;
+  top: 14px;
   left: 14px;
   padding: 4px 8px 0 8px;
   font-family: Chilanka;
@@ -156,14 +202,11 @@ h4 {
   letter-spacing: 0.18px;
   text-transform: capitalize;
 }
-.my-card_img {
-  width: 100%;
-  object-fit: cover;
-}
 .my-card_title {
   margin-top: 20px;
-  height: 28px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .my-card_rating {
   margin-top: 7.5px;
@@ -227,6 +270,84 @@ h4 {
 
 .pet-product {
   margin-top: 150px;
+}
+.pet-product_shop-all {
+  width: 100%;
+  height: 100%;
+  padding: 18px 10px;
+  color: #41403e;
+  font-family: Chilanka;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+  border-radius: 4px;
+}
+.pet-product_shop-all svg {
+  width: 18px;
+  height: 18px;
+  fill: #41403e;
+}
+.pet-product_nav a {
+  text-decoration: underline;
+  text-decoration-color: rgba(65, 64, 62, 0.2);
+  text-underline-offset: 10px;
+}
+.pet-product_nav .active {
+  text-decoration-color: #dead6f;
+}
+
+.sale {
+  margin-top: 170px;
+  background: #f9f3ec;
+}
+.sale_img {
+  margin-left: 30px;
+}
+.sale_upto {
+  color: #dead6f;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+.sale h2 {
+  margin-top: 30px;
+}
+.sale_btn {
+  margin-top: 30px;
+}
+.sale_shop-all {
+  padding: 28px 50px;
+  color: #41403e;
+  font-family: Chilanka;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+  border-radius: 4px;
+}
+.sale_shop-all svg {
+  width: 18px;
+  height: 18px;
+  fill: #41403e;
+}
+
+@media (min-width: 576px) {
+  .sale_upto {
+    margin-top: 120px;
+  }
+}
+.sign-up {
+  margin-top: 150px;
+  background: #f9f3ec;
+  height: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */
